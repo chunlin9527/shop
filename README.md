@@ -1,4 +1,4 @@
-# jd
+# shop
 
 ## Project setup
 ```
