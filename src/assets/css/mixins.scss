@@ -1,0 +1,11 @@
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipse;
+}
+
+@mixin fontSize {
+  font-size: .2rem;
+  transform: scale(.5);
+  transform-origin: center;
+}

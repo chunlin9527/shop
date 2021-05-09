@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <script>
+      // 响应式布局
+      // function refreshRem() {
+      //   const width = document.documentElement.getBoundingClientRect().width
+      //   const rem = width / 10
+      //   document.documentElement.style.fontSize = rem + 'px'
+      // }
+      // window.addEventListener('resize', refreshRem)
+
+      var width = document.documentElement.getBoundingClientRect().width || document.body.clientWidth
+      var ratio = width / 375
+      var fontSize = 100 * ratio
+      document.querySelector('html').style['fontSize'] = fontSize + 'px'
+    </script>
   </head>
   <body>
     <noscript>
